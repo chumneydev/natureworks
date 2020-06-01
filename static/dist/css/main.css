@@ -75,3 +75,42 @@
 #testimonials {
   padding: 20px 0;
 }
+
+#testimonials .testimonial {
+  padding: 20px;
+}
+
+#testimonials .testimonial .testimonial-image {
+  width: 20%;
+  float: left;
+}
+
+#testimonials .testimonial .testimonial-image img {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #4a9f44;
+}
+
+#testimonials .testimonial .testimonial-copy {
+  width: 70%;
+  padding: 20px 0 0 20px;
+  float: left;
+  vertical-align: middle;
+}
+
+#testimonials .testimonial .testimonial-copy h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+}
+
+#testimonials .slick-prev:before {
+  color: #333333 !important;
+  font-size: 32px !important;
+}
+
+#testimonials .slick-next:before {
+  color: #333333 !important;
+  font-size: 32px !important;
+}

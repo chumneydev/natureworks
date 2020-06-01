@@ -85,4 +85,47 @@ $dark-grey: #333333;
 
 #testimonials {
     padding: 20px 0;
+
+
+    & .testimonial {
+        padding: 20px;
+
+
+        & .testimonial-image {
+            width: 20%;
+            float: left;
+
+            & img {
+                vertical-align: middle;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 5px solid $green;
+            }
+        }
+    
+        & .testimonial-copy {
+            width: 70%;
+            padding: 20px 0 0 20px;
+            float: left;
+            vertical-align: middle;
+
+            & h4 {
+                font-family: 'Roboto Condensed', sans-serif;
+                font-weight: bold;
+            }
+        }
+    
+    
+    }
+
+    & .slick-prev:before {
+        color: $dark-grey !important;
+        font-size: 32px !important;
+    }
+
+    & .slick-next:before {
+        color: $dark-grey !important;
+        font-size: 32px !important;
+    }
 }

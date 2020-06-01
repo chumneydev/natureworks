@@ -1,6 +1,7 @@
 dynamic
 static/backup
 static/_javascript
+static/_sass
 static/node_modules
 static/lib
 static/gulpfile.js

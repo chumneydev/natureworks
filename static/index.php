@@ -205,9 +205,41 @@
                     <div class="column is-desktop-12">
 
                         <div class="slider test">
+                            
+                            <div class="testimonial">
+                                <div class="testimonial-image">
+                                    <figure class="image is-4by3">
+                                        <img src="dist/images/avatar.png" alt="Avatar">
+                                    </figure>
+                                </div>
+                                <div class="testimonial-copy">
+                                    <h4>Scott Swiger</h4>    
+                                    <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                                </div>
+                            </div>
 
                             <div class="testimonial">
-                                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                                <div class="testimonial-image">
+                                    <figure class="image is-4by3">
+                                        <img src="dist/images/avatar.png" alt="Avatar">
+                                    </figure>
+                                </div>
+                                <div class="testimonial-copy">
+                                    <h4>Scott Swiger</h4>    
+                                    <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                                </div>
+                            </div>
+
+                            <div class="testimonial">
+                                <div class="testimonial-image">
+                                    <figure class="image is-4by3">
+                                        <img src="dist/images/avatar.png" alt="Avatar">
+                                    </figure>
+                                </div>
+                                <div class="testimonial-copy">
+                                    <h4>Scott Swiger</h4>    
+                                    <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                                </div>
                             </div>
 
 

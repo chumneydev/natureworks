@@ -219,7 +219,7 @@
                     </div>
                 </div>
 
-                <div class="column is-7-desktop is-paddingless">
+                <div class="column is-7-desktop is-paddingless is-hidden-mobile">
                     <img src="dist/images/steps.png" alt="steps" />
                 </div>
 
@@ -237,9 +237,7 @@
 
                             <div class="testimonial">
                                 <div class="testimonial-image">
-                                    <figure class="image is-4by3">
                                         <img src="dist/images/avatar.png" alt="Avatar">
-                                    </figure>
                                 </div>
                                 <div class="testimonial-copy">
                                     <h4>Scott Swiger</h4>    
@@ -249,9 +247,7 @@
 
                             <div class="testimonial">
                                 <div class="testimonial-image">
-                                    <figure class="image is-4by3">
                                         <img src="dist/images/avatar.png" alt="Avatar">
-                                    </figure>
                                 </div>
                                 <div class="testimonial-copy">
                                     <h4>Vince Tan</h4>    
@@ -261,9 +257,7 @@
 
                             <div class="testimonial">
                                 <div class="testimonial-image">
-                                    <figure class="image is-4by3">
-                                        <img src="dist/images/avatar.png" alt="Avatar">
-                                    </figure>
+                                    <img src="dist/images/avatar.png" alt="Avatar">
                                 </div>
                                 <div class="testimonial-copy">
                                     <h4>Adam Creveling</h4>    
@@ -373,7 +367,8 @@
                 arrows: false,
                 dots: true,
                 infinite: true,
-                autoplay: false,
+                autoplay: true,
+                autoplaySpeed: 4000
 
             });
 

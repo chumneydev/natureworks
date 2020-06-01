@@ -165,33 +165,31 @@
 
     <!-- steps -->
         <section id="steps">
-            <div class="container">
-                <div class="columns has-text-white">
-                        <div class="column is-desktop-7">
-                            <div class="step">
-                                <p class="number">1</p>
-                                <h3>Experience</h3>
-                                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                            </div>
-                            <div class="step">
-                                <p class="number">2</p>
-                                <h3>Quality</h3>
-                                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                            </div>
+            <div class="columns has-text-white">
+                <div class="column is-5-desktop">
+                    <div class="step">
+                        <p class="number">1</p>
+                        <h3>Experience</h3>
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+                    </div>
+    
+                    <div class="step">
+                        <p class="number">2</p>
+                        <h3>Quality</h3>
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+                    </div>
 
-                            <div class="step">
-                                <p class="number">3</p>
-                                <h3>Satisfaction</h3>
-                                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                            </div>
-
-                        </div>
-
-                        <div class="column is-desktop-5">
-                                <img src="dist/images/steps.png" alt="steps" />
-                        </div>
-
+                    <div class="step">
+                        <p class="number">3</p>
+                        <h3>Satisfaction</h3>
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+                    </div>
                 </div>
+
+                <div class="column is-7-desktop is-paddingless">
+                    <img src="dist/images/steps.png" alt="steps" />
+                </div>
+
             </div>
         </section>
 
@@ -202,21 +200,7 @@
         <section id="testimonials">
             <div class="container">
                 <div class="columns">
-                    <div class="column is-desktop-12">
-
-                        <div class="slider test">
-                            
-                            <div class="testimonial">
-                                <div class="testimonial-image">
-                                    <figure class="image is-4by3">
-                                        <img src="dist/images/avatar.png" alt="Avatar">
-                                    </figure>
-                                </div>
-                                <div class="testimonial-copy">
-                                    <h4>Scott Swiger</h4>    
-                                    <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                                </div>
-                            </div>
+                    <div class="column is-desktop-12 test">
 
                             <div class="testimonial">
                                 <div class="testimonial-image">
@@ -242,10 +226,18 @@
                                 </div>
                             </div>
 
+                            <div class="testimonial">
+                                <div class="testimonial-image">
+                                    <figure class="image is-4by3">
+                                        <img src="dist/images/avatar.png" alt="Avatar">
+                                    </figure>
+                                </div>
+                                <div class="testimonial-copy">
+                                    <h4>Scott Swiger</h4>    
+                                    <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                                </div>
+                            </div>
 
-
-                        </div>
-                        
 
 
 

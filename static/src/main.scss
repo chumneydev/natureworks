@@ -67,13 +67,17 @@ $dark-grey: #333333;
 
 
     & .step {
-        padding: 20px 0;
+        padding: 20px 0 20px 300px;
         position: relative;
+
+        & p {
+            font-size: 12px;
+        }
 
         & .number {
             position: absolute;
             top: -10px;
-            left: -90px;
+            left: 200px;
             font-family: 'Roboto Condensed',sans-serif;
             font-style: italic;
             font-size: 8rem;
@@ -105,7 +109,7 @@ $dark-grey: #333333;
         }
     
         & .testimonial-copy {
-            width: 70%;
+            width: 75%;
             padding: 20px 0 0 20px;
             float: left;
             vertical-align: middle;

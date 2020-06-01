@@ -9,7 +9,9 @@ $black: #000000;
     min-width: 0;
 }
 
-
+#nav {
+    border-top: 10px solid $green;
+}
 .navbar-brand {
     text-transform: uppercase;
     font-weight: 900;
@@ -24,11 +26,12 @@ $black: #000000;
     & .slideshow {
 
         & .slide {
+            position: relative;
 
             & .copy {
                 position: absolute;
                 color: $white;
-                left: 10%;
+                left: 15%;
                 top: 25%;
                 z-index: 10;
 
@@ -45,7 +48,6 @@ $black: #000000;
             }
 
             & img {
-                position: relative;
                 z-index: 9;
                 opacity: 0.3;
             }
@@ -54,6 +56,10 @@ $black: #000000;
         & .slick-dots {
             bottom: 20px !important;
             color: $white;
+        }
+
+        &.slick-slider {
+            margin-bottom: 0 !important;
         }
     }
 }
@@ -112,7 +118,7 @@ $black: #000000;
 
 
     & .step {
-        padding: 20px 0 20px 300px;
+        padding: 20px 0 20px 160px;
         position: relative;
 
         & p {
@@ -121,8 +127,8 @@ $black: #000000;
 
         & .number {
             position: absolute;
-            top: -10px;
-            left: 200px;
+            top: -20px;
+            left: 60px;
             font-family: 'Roboto Condensed',sans-serif;
             font-style: italic;
             font-size: 8rem;
@@ -176,5 +182,69 @@ $black: #000000;
     & .slick-next:before {
         color: $dark-grey !important;
         font-size: 32px !important;
+    }
+}
+
+
+#footer-top {
+    padding: 20px 0;
+    background: $black;
+    color: $white;
+}
+
+
+#cities {
+    color: $white;
+    background: $black;
+    text-align: center;
+    padding: 20px 0;
+
+    & p {
+        font-family: 'Roboto Condensed',sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        background: $green;
+        padding: 10px 20px;
+        display: inline;
+        margin: 0 0 20px 0;
+    
+
+    }
+
+    & ul {
+        margin: 20px 0;
+
+        &.cities-main {
+            & li {
+                display: inline-block;
+                background-image: none;
+                padding: 0 30px;
+                position: relative;
+            
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    background: $green;
+                    top: 9px;
+                    right: -5px;
+                    border-radius: 50px;
+                }
+            
+            }
+
+            & li:last-child:after {
+                display: none;
+            }
+        }
+    }
+
+}
+
+footer {
+
+    &.footer {
+        padding: 10px !important;
     }
 }

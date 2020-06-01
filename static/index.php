@@ -14,7 +14,7 @@
     <body>
         
 
-    <section>
+    <section id="nav">
 
         <nav class="navbar" role="navigation" aria-label="main navigation">
             
@@ -55,7 +55,7 @@
     <!-- slideshow -->
     <section id="slideshow">
         <div class="columns">
-            <div class="column is-desktop-12 is-paddingless slideshow">
+            <div class="column is-12-desktop is-paddingless slideshow">
 
                 <div class="slide">
                     <div class="copy">
@@ -233,7 +233,7 @@
         <section id="testimonials">
             <div class="container">
                 <div class="columns">
-                    <div class="column is-desktop-12 test">
+                    <div class="column is-12-desktop test">
 
                             <div class="testimonial">
                                 <div class="testimonial-image">
@@ -282,12 +282,12 @@
     <!-- testimonials -->
 
     <!-- section -->
-    <section>
+    <section id="footer-top">
         <div class="container">
             <div class="columns is-centered">
-                <div class="column is-desktop-4"><p>C & S Natureworks</p></div>
-                <div class="column is-desktop-4"><p>Column</p></div>
-                <div class="column is-desktop-4">
+                <div class="column is-4-desktop has-text-centered"><p>C & S Natureworks</p></div>
+                <div class="column is-4-desktop has-text-centered"><p>Column</p></div>
+                <div class="column is-4-desktop has-text-centered">
                     <ul>
                         <li>(864) 415-7979</li>
                         <li>csnatureworks@gmail.com</li>
@@ -298,6 +298,31 @@
         </div>
     </section>
 
+    <section id="cities">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-12-desktop">
+                    <p>Areas we Serve</p>
+
+                    <ul class="cities-main">
+                        <li>Greenville</li>
+                        <li>Spartanburg</li>
+                        <li>Anderson</li>
+                        <li>Pickens</li>
+                        <li>Laurens</li>
+                        <li>Cherokee</li>
+                    </ul>    
+                    <ul class="cities-less">
+                        <li>Mauldin| Berea | Powdersville | Wade Hampton | Simpsonville | Travelers Rest | Easley | Taylors | Five Forks | Fountain Inn | Slater-Marietta | Liberty | Piedmont | Greer | Gray Court | Tigerville | Pendleton | Pelzer | Williamston | Northlake | Belton | Woodruff | Reidville | Duncan | Wellford | Boiling Springs | Inman | Campobello | Landrum | Highland | Cleveland | Pumpkintown | Clemson | Williamston | Enoree | Roebuck | Cowpens | Chesnee | Gaffney</li>
+                    </ul>    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
 
 
 
@@ -348,7 +373,7 @@
                 arrows: false,
                 dots: true,
                 infinite: true,
-                autoplay: true,
+                autoplay: false,
 
             });
 

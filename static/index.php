@@ -167,7 +167,7 @@
     <!-- main -->
     <section id="about">
         <div class="container">
-            <div class="columns">
+            <div class="columns is-vcentered"">
 
                 <div class="column is-7-desktop">
                     <h1 class="is-size-2 has-text-secondary">Welcome To <span class="has-text-primary">C & S Natureworks</span></h1>
@@ -199,7 +199,7 @@
             <div class="columns has-text-white">
                 <div class="column is-5-desktop">
                     <h2>Why Choose Us?</h2>
-                    <h3><span>The Reasons</span> Why  you should contact us...</h3>
+                    <h2><span>The Reasons</span> Why  you should contact us...</h2>
                     <div class="step">
                         <p class="number">1</p>
                         <h3>Experience</h3>
@@ -254,7 +254,7 @@
                                     </figure>
                                 </div>
                                 <div class="testimonial-copy">
-                                    <h4>Scott Swiger</h4>    
+                                    <h4>Vince Tan</h4>    
                                     <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                                 </div>
                             </div>
@@ -266,7 +266,7 @@
                                     </figure>
                                 </div>
                                 <div class="testimonial-copy">
-                                    <h4>Scott Swiger</h4>    
+                                    <h4>Adam Creveling</h4>    
                                     <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                                 </div>
                             </div>

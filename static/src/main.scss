@@ -99,6 +99,23 @@ $black: #000000;
     background: $dark-grey;
     padding: 0;
 
+    & h2 {
+        font-size: 2rem;
+        padding: 0 0 0 60px;
+        text-transform: capitalize;
+
+        &:first-of-type {
+            font-size: 1rem;
+        }
+
+        & span {
+            text-decoration: underline;
+            text-decoration-color: $green;
+        }
+
+    }
+
+
     & h3 {
         text-transform: uppercase;
         font-family: 'Roboto Condensed',sans-serif;
@@ -156,6 +173,7 @@ $black: #000000;
                 height: 150px;
                 border-radius: 50%;
                 border: 5px solid $green;
+                margin: 0 auto;
             }
         }
     

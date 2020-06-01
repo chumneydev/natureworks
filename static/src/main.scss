@@ -1,0 +1,88 @@
+$green: #4a9f44;
+$dark-grey: #333333;
+
+// fix for slickslide
+* {
+    min-height: 0;
+    min-width: 0;
+}
+
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
+
+#services {
+    padding: 20px 0;
+
+    & h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    & p {
+        font-size: 12px;
+    }
+    & .service-btn {
+        position: absolute;
+        left: 25%;
+        bottom: -20px;
+    }
+
+
+}
+
+
+#about {
+    padding: 20px 0;
+
+    & p {
+        padding: 10px;
+    }
+}
+
+#steps {
+    background: $dark-grey;
+    padding: 0;
+
+    & h3 {
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed',sans-serif;
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    & p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    & img {
+        width: 100%;
+        display: block;
+    }
+
+
+    & .step {
+        padding: 20px 0;
+        position: relative;
+
+        & .number {
+            position: absolute;
+            top: -10px;
+            left: -90px;
+            font-family: 'Roboto Condensed',sans-serif;
+            font-style: italic;
+            font-size: 8rem;
+        }
+    }
+
+}
+
+
+#testimonials {
+    padding: 20px 0;
+}

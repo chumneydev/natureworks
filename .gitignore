@@ -1,0 +1,9 @@
+dynamic
+static/backup
+static/_javascript
+static/node_modules
+static/lib
+static/gulpfile.js
+static/webpack.config.js
+static/package.json
+static/package-lock.json

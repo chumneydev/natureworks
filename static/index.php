@@ -52,6 +52,37 @@
 
     </section>
 
+    <!-- slideshow -->
+    <section id="slideshow">
+        <div class="columns">
+            <div class="column is-desktop-12 is-paddingless slideshow">
+
+                <div class="slide">
+                    <div class="copy">
+                        <h2>Check out our services</h2>
+                        <h4>Landscaping and more</h4>
+                        <a href="#" class="button is-primary">> Click for more info</a>
+                    </div>
+                    <img src="dist/images/slide.png" alt="slide" />
+                </div>
+
+                <div class="slide">
+                    <div class="copy">
+                        <h2>Check out our services</h2>
+                        <h4>Landscaping and more</h4>
+                        <a href="#" class="button is-primary">> Click for more info</a>
+                    </div>
+                    <img src="dist/images/slide.png" alt="slide" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- slideshow -->
+
+
+
     <!-- services -->
     <section id="services">
         <div class="container">
@@ -167,6 +198,8 @@
         <section id="steps">
             <div class="columns has-text-white">
                 <div class="column is-5-desktop">
+                    <h2>Why Choose Us?</h2>
+                    <h3><span>The Reasons</span> Why  you should contact us...</h3>
                     <div class="step">
                         <p class="number">1</p>
                         <h3>Experience</h3>
@@ -304,6 +337,16 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,
+                infinite: true,
+                autoplay: true,
+
+            });
+
+            $('.slideshow').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
                 infinite: true,
                 autoplay: true,
 

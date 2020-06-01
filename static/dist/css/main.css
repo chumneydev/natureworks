@@ -8,6 +8,40 @@
   font-weight: 900;
 }
 
+#slideshow {
+  background: #000000;
+}
+
+#slideshow .slideshow .slide .copy {
+  position: absolute;
+  color: #FFFFFF;
+  left: 10%;
+  top: 25%;
+  z-index: 10;
+}
+
+#slideshow .slideshow .slide .copy h2 {
+  font-family: 'Roboto Condensed',sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+#slideshow .slideshow .slide .copy h4 {
+  font-size: 3rem;
+  font-family: 'Roboto Condensed',sans-serif;
+}
+
+#slideshow .slideshow .slide img {
+  position: relative;
+  z-index: 9;
+  opacity: 0.3;
+}
+
+#slideshow .slideshow .slick-dots {
+  bottom: 20px !important;
+  color: #FFFFFF;
+}
+
 #services {
   padding: 20px 0;
 }

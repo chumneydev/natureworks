@@ -1,5 +1,7 @@
 $green: #4a9f44;
 $dark-grey: #333333;
+$white: #FFFFFF;
+$black: #000000;
 
 // fix for slickslide
 * {
@@ -13,6 +15,49 @@ $dark-grey: #333333;
     font-weight: 900;
 
 }
+
+
+#slideshow {
+    background: $black;
+
+
+    & .slideshow {
+
+        & .slide {
+
+            & .copy {
+                position: absolute;
+                color: $white;
+                left: 10%;
+                top: 25%;
+                z-index: 10;
+
+                & h2 {
+                    font-family: 'Roboto Condensed',sans-serif;
+                    text-transform: uppercase;
+                    font-size: 5rem;
+                }
+
+                & h4 {
+                    font-size:3rem;
+                    font-family: 'Roboto Condensed',sans-serif;
+                }
+            }
+
+            & img {
+                position: relative;
+                z-index: 9;
+                opacity: 0.3;
+            }
+        }
+
+        & .slick-dots {
+            bottom: 20px !important;
+            color: $white;
+        }
+    }
+}
+
 
 #services {
     padding: 20px 0;

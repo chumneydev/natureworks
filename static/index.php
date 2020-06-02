@@ -278,9 +278,11 @@
     <!-- section -->
     <section id="footer-top">
         <div class="container">
-            <div class="columns is-centered">
-                <div class="column is-4-desktop has-text-centered"><p>C & S Natureworks</p></div>
-                <div class="column is-4-desktop has-text-centered"><p>Column</p></div>
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-4-desktop has-text-centered"><p class="logo-text">C & S Natureworks</p></div>
+                <div class="column is-4-desktop has-text-centered">
+                    <img src="dist/images/logo.png" alt="logo" class="logo-image" />
+                </div>
                 <div class="column is-4-desktop has-text-centered">
                     <ul>
                         <li>(864) 415-7979</li>

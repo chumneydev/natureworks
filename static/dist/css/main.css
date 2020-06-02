@@ -186,6 +186,16 @@
   color: #FFFFFF;
 }
 
+#footer-top .logo-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#footer-top .logo-image {
+  width: 50%;
+}
+
 #cities {
   color: #FFFFFF;
   background: #000000;

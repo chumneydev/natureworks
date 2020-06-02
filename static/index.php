@@ -233,8 +233,9 @@
         <section id="testimonials">
             <div class="container">
                 <div class="columns">
-                    <div class="column is-12-desktop test">
-
+                    <div class="column is-12-desktop">
+                        <h2>Testimonials</h2>
+                            <div class="test">
                             <div class="testimonial">
                                 <div class="testimonial-image">
                                         <img src="dist/images/avatar.png" alt="Avatar">
@@ -263,6 +264,7 @@
                                     <h4>Adam Creveling</h4>    
                                     <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                                 </div>
+                            </div>
                             </div>
 
 

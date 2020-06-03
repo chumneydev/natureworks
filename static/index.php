@@ -334,7 +334,7 @@
                     <ul>
                         <li>(864) 415-7979</li>
                         <li>csnatureworks@gmail.com</li>
-                        <li>Like Us on Facebook</li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Like Us on Facebook</a></li>
                     </ul>    
                 </div>
             </div>
@@ -356,7 +356,7 @@
                         <li>Cherokee</li>
                     </ul>    
                     <ul class="cities-less">
-                        <li>Mauldin| Berea | Powdersville | Wade Hampton | Simpsonville | Travelers Rest | Easley | Taylors | Five Forks | Fountain Inn | Slater-Marietta | Liberty | Piedmont | Greer | Gray Court | Tigerville | Pendleton | Pelzer | Williamston | Northlake | Belton | Woodruff | Reidville | Duncan | Wellford | Boiling Springs | Inman | Campobello | Landrum | Highland | Cleveland | Pumpkintown | Clemson | Williamston | Enoree | Roebuck | Cowpens | Chesnee | Gaffney</li>
+                        <li>Mauldin | Berea | Powdersville | Wade Hampton | Simpsonville | Travelers Rest | Easley | Taylors | Five Forks | Fountain Inn | Slater-Marietta | Liberty | Piedmont | Greer | Gray Court | Tigerville | Pendleton | Pelzer | Williamston | Northlake | Belton | Woodruff | Reidville | Duncan | Wellford | Boiling Springs | Inman | Campobello | Landrum | Highland | Cleveland | Pumpkintown | Clemson | Williamston | Enoree | Roebuck | Cowpens | Chesnee | Gaffney</li>
                     </ul>    
 
                 </div>

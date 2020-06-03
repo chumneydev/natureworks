@@ -49,7 +49,7 @@
                 
             </div>
         </nav>
-        <div class="call-us">
+        <div class="call-us is-hidden-mobile">
             <p>
                 <span class="fa-stack fa-sm">
                     <i class="fas fa-circle fa-stack-2x"></i>
@@ -182,11 +182,14 @@
                 
                     <p>C & S Nature Works is the best contractor for forestry mulching, land clearing, brush clearing, and landscaping services – such as grading, brush cutting, and ponds – in Upstate SC. Our land management services take care of residential, commercial, and industrial outdoor needs in Greenville, Spartanburg, Anderson, Pickens, Laurens, and Cherokee counties in South Carolina.</p>
 
-                    <p>Beautify – Let C & S Nature Works transform your property by clearing overgrown brush or installing residential hardscape or water features.
-                    <p>Reclaim – We can help you find your land’s full potential by opening up unusable areas for farming, access roads, construction, and more.
-                    <p>Protect – Keep your home, crops, and loved ones safe from land erosion, fire hazards, and harmful wildlife.
+                    <h2>Beautify</h2>
+                    <p>Let C & S Nature Works transform your property by clearing overgrown brush or installing residential hardscape or water features.</p>
+                    <h2>Reclaim</h2>
+                    <p>We can help you find your land’s full potential by opening up unusable areas for farming, access roads, construction, and more.</p>
+                    <h2>Protect</h2>
+                    <p>Keep your home, crops, and loved ones safe from land erosion, fire hazards, and harmful wildlife.</p>
 
-                    <p>We handle projects from beginning to finish – from clearing services such as excavation, debris removal, and landscape prep to appearance upgrades like ponds, patios, and fire pits. If your job involves the outdoors, it’s our specialty.
+                    <p>We handle projects from beginning to finish – from clearing services such as excavation, debris removal, and landscape prep to appearance upgrades like ponds, patios, and fire pits. If your job involves the outdoors, it’s our specialty.</p>
                 </div>
 
                 <div class="column is-5-desktop">
@@ -203,9 +206,9 @@
     <!-- main -->
 
     <!-- steps -->
-        <section id="steps">
+        <!--<section id="steps">
             <div class="columns has-text-white">
-                <div class="column is-5-desktop">
+                <div class="column is-12-tablet is-7-desktop">
                     <h1>Why Choose Us?</h1>
                     <h2><span>The Reasons</span> Why  you should contact us...</h2>
                     <div class="step">
@@ -227,15 +230,49 @@
                     </div>
                 </div>
 
-                <div class="column is-7-desktop is-paddingless is-hidden-mobile">
+                <div class="column is-5-desktop is-paddingless is-hidden-mobile step-image">
                     <img src="dist/images/steps.png" alt="steps" />
                 </div>
 
             </div>
+        </section> -->
+    <!-- steps -->
+
+
+        <section id="steps">
+            <div class="container">
+                <div class="columns has-text-white">
+                    <div class="column is-12-tablet is-12-desktop">
+                        <h1>Why Choose Us?</h1>
+                        <h2><span>The Reasons</span> Why  you should contact us...</h2>
+                        <div class="step">
+                            <p class="number">1</p>
+                            <h3>Experience</h3>
+                            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+                        </div>
+    
+                        <div class="step">
+                            <p class="number">2</p>
+                            <h3>Quality</h3>
+                            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+                        </div>
+
+                        <div class="step">
+                            <p class="number">3</p>
+                            <h3>Satisfaction</h3>
+                            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
-    <!-- steps -->
+
+
+
+
+
 
     <!-- testimonials -->
         <section id="testimonials">

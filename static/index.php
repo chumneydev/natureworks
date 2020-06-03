@@ -49,7 +49,15 @@
                 
             </div>
         </nav>
-
+        <div class="call-us">
+            <p>
+                <span class="fa-stack fa-sm">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-phone fa-stack-1x fa-inverse fa-flip-horizontal"></i>
+                </span>
+                Call us Anytime: <a href="tel:864-415-7979">(864) 415-7979</a>
+            </p>
+        </div>    
     </section>
 
     <!-- slideshow -->
@@ -60,7 +68,7 @@
                 <div class="slide">
                     <div class="copy">
                         <h2>Check out our services</h2>
-                        <h4>Landscaping and more</h4>
+                        <h3>Landscaping and more</h3>
                         <a href="#" class="button is-primary">> Click for more info</a>
                     </div>
                     <img src="dist/images/slide.png" alt="slide" />
@@ -69,7 +77,7 @@
                 <div class="slide">
                     <div class="copy">
                         <h2>Check out our services</h2>
-                        <h4>Landscaping and more</h4>
+                        <h3>Landscaping and more</h3>
                         <a href="#" class="button is-primary">> Click for more info</a>
                     </div>
                     <img src="dist/images/slide.png" alt="slide" />
@@ -88,7 +96,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-12-desktop is-12-mobile has-text-centered">
-                    <h2 class="is-size-3">Our Services</h2>
+                    <h1>Our Services</h1>
                 </div>
             </div>
 
@@ -105,7 +113,7 @@
                         </div>
                         <div class="card-content">
                             <div class="content">
-                            <h2 class="is-size-4">Land Management</h2>
+                            <h2>Land Management</h2>
                                 <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum.</p>
                             </div>
                         </div>
@@ -125,7 +133,7 @@
                         </div>
                         <div class="card-content">
                             <div class="content">
-                                <h2 class="is-size-4">Wildlife Removal</h2>
+                                <h2>Wildlife Removal</h2>
                                 <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum.</p>
                             </div>
                         </div>
@@ -145,7 +153,7 @@
                         </div>
                         <div class="card-content">
                             <div class="content">
-                                <h2 class="is-size-4">Pond & Water Features</h2>
+                                <h2>Pond & Water Features</h2>
                                 <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum.</p>
                             </div>
                         </div>
@@ -170,7 +178,7 @@
             <div class="columns is-vcentered"">
 
                 <div class="column is-7-desktop">
-                    <h1 class="is-size-2 has-text-secondary">Welcome To <span class="has-text-primary">C & S Natureworks</span></h1>
+                    <h1>Welcome To <span class="has-text-primary">C & S Natureworks</span></h1>
                 
                     <p>C & S Nature Works is the best contractor for forestry mulching, land clearing, brush clearing, and landscaping services – such as grading, brush cutting, and ponds – in Upstate SC. Our land management services take care of residential, commercial, and industrial outdoor needs in Greenville, Spartanburg, Anderson, Pickens, Laurens, and Cherokee counties in South Carolina.</p>
 
@@ -198,7 +206,7 @@
         <section id="steps">
             <div class="columns has-text-white">
                 <div class="column is-5-desktop">
-                    <h2>Why Choose Us?</h2>
+                    <h1>Why Choose Us?</h1>
                     <h2><span>The Reasons</span> Why  you should contact us...</h2>
                     <div class="step">
                         <p class="number">1</p>
@@ -234,14 +242,14 @@
             <div class="container">
                 <div class="columns">
                     <div class="column is-12-desktop">
-                        <h2>Testimonials</h2>
+                        <h1>Testimonials</h1>
                             <div class="test">
                             <div class="testimonial">
                                 <div class="testimonial-image">
                                         <img src="dist/images/avatar.png" alt="Avatar">
                                 </div>
                                 <div class="testimonial-copy">
-                                    <h4>Scott Swiger</h4>    
+                                    <p>Scott Swiger</p>    
                                     <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                                 </div>
                             </div>
@@ -251,7 +259,7 @@
                                         <img src="dist/images/avatar.png" alt="Avatar">
                                 </div>
                                 <div class="testimonial-copy">
-                                    <h4>Vince Tan</h4>    
+                                    <p>Vince Tan</p>    
                                     <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                                 </div>
                             </div>
@@ -261,7 +269,7 @@
                                     <img src="dist/images/avatar.png" alt="Avatar">
                                 </div>
                                 <div class="testimonial-copy">
-                                    <h4>Adam Creveling</h4>    
+                                    <p>Adam Creveling</p>    
                                     <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                                 </div>
                             </div>
@@ -345,6 +353,7 @@
 
     <script src="https://www.theautohost.com/_assets/coding/js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="dist/js/slick.min.js"></script>
+    <script type="text/javascript" src="dist/js/all.min.js"></script>
     <script type="text/javascript" src="lib/main.js"></script>
     
     <script type="text/javascript">

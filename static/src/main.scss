@@ -1,7 +1,5 @@
-$green: #4a9f44;
-$dark-grey: #333333;
-$white: #FFFFFF;
-$black: #000000;
+@import "variables";
+
 
 // fix for slickslide
 * {
@@ -9,14 +7,43 @@ $black: #000000;
     min-width: 0;
 }
 
+
+// Globals
+p {
+    font-family: $roboto;
+    font-weight: 400;
+}
+
 #nav {
     border-top: 10px solid $green;
+    position: relative;
+    font-family: $roboto;
+    font-weight: 900;
+
+    & .call-us {
+        position: absolute;
+        right: 60px;
+        padding: 10px 20px;
+        font-weight: bold;
+        text-transform: capitalize;
+        background: rgba($white, 0.8);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        z-index: 12;
+
+        & .fa-stack {
+            vertical-align: middle;
+            color: $green;
+        }
+    }
+
 }
 .navbar-brand {
     text-transform: uppercase;
     font-weight: 900;
 
 }
+
 
 
 #slideshow {
@@ -68,6 +95,12 @@ $black: #000000;
 #services {
     padding: 20px 0;
 
+    & h1 {
+        text-transform: uppercase;
+        font-weight: 900;
+        color: $black;
+        font-size: 2rem;
+    }
     & h2 {
         text-transform: uppercase;
         text-align: center;
@@ -90,6 +123,12 @@ $black: #000000;
 #about {
     padding: 20px 0;
 
+    & h1 {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
     & p {
         padding: 10px;
     }
@@ -99,14 +138,16 @@ $black: #000000;
     background: $dark-grey;
     padding: 0;
 
+    & h1 {
+        padding: 0 0 0 60px;
+        font-weight: 900;
+    }
+
     & h2 {
         font-size: 2rem;
         padding: 0 0 0 60px;
         text-transform: capitalize;
-
-        &:first-of-type {
-            font-size: 1rem;
-        }
+        font-weight: 900;
 
         & span {
             border-bottom: 2px solid $green;
@@ -158,12 +199,13 @@ $black: #000000;
 #testimonials {
     padding: 20px 0;
 
-    & h2 {
+    & h1 {
         text-align: center;
-        font-family: 'Roboto Condensed',sans-serif;
-        font-weight: bold;
+        font-family: $roboto;
+        font-weight: 900;
         text-transform: uppercase;
         font-size: 2rem;
+        color: $black;
     }
 
     & .testimonial {
@@ -190,10 +232,18 @@ $black: #000000;
             float: left;
             vertical-align: middle;
 
-            & h4 {
-                font-family: 'Roboto Condensed', sans-serif;
-                font-weight: bold;
+
+            & p {
+                font-style: italic;
+
+                &:first-of-type {
+                    font-weight: 900;
+                    font-style: normal;
+                    color: $black;
+                }
             }
+
+
         }
     
     

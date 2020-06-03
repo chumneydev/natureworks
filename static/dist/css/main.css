@@ -1,10 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;900&display=swap");
 * {
   min-height: 0;
   min-width: 0;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
 #nav {
   border-top: 10px solid #4a9f44;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+#nav .call-us {
+  position: absolute;
+  right: 60px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 12;
+}
+
+#nav .call-us .fa-stack {
+  vertical-align: middle;
+  color: #4a9f44;
 }
 
 .navbar-brand {
@@ -57,6 +83,13 @@
   padding: 20px 0;
 }
 
+#services h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #000000;
+  font-size: 2rem;
+}
+
 #services h2 {
   text-transform: uppercase;
   text-align: center;
@@ -77,6 +110,12 @@
   padding: 20px 0;
 }
 
+#about h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
 #about p {
   padding: 10px;
 }
@@ -86,14 +125,16 @@
   padding: 0;
 }
 
+#steps h1 {
+  padding: 0 0 0 60px;
+  font-weight: 900;
+}
+
 #steps h2 {
   font-size: 2rem;
   padding: 0 0 0 60px;
   text-transform: capitalize;
-}
-
-#steps h2:first-of-type {
-  font-size: 1rem;
+  font-weight: 900;
 }
 
 #steps h2 span {
@@ -140,12 +181,13 @@
   padding: 20px 0;
 }
 
-#testimonials h2 {
+#testimonials h1 {
   text-align: center;
-  font-family: 'Roboto Condensed',sans-serif;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 2rem;
+  color: #000000;
 }
 
 #testimonials .testimonial {
@@ -173,9 +215,14 @@
   vertical-align: middle;
 }
 
-#testimonials .testimonial .testimonial-copy h4 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: bold;
+#testimonials .testimonial .testimonial-copy p {
+  font-style: italic;
+}
+
+#testimonials .testimonial .testimonial-copy p:first-of-type {
+  font-weight: 900;
+  font-style: normal;
+  color: #000000;
 }
 
 #testimonials .slick-prev:before {

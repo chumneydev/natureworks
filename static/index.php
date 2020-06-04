@@ -182,11 +182,11 @@
                 
                     <p>C & S Nature Works is the best contractor for forestry mulching, land clearing, brush clearing, and landscaping services – such as grading, brush cutting, and ponds – in Upstate SC. Our land management services take care of residential, commercial, and industrial outdoor needs in Greenville, Spartanburg, Anderson, Pickens, Laurens, and Cherokee counties in South Carolina.</p>
 
-                    <h2>Beautify</h2>
+                    <h2><i class="fab fa-pagelines icons"></i> Beautify</h2>
                     <p>Let C & S Nature Works transform your property by clearing overgrown brush or installing residential hardscape or water features.</p>
-                    <h2>Reclaim</h2>
+                    <h2><i class="fas fa-leaf-heart icons"></i> Reclaim</h2>
                     <p>We can help you find your land’s full potential by opening up unusable areas for farming, access roads, construction, and more.</p>
-                    <h2>Protect</h2>
+                    <h2><i class="fas fa-raindrops icons"></i> Protect</h2>
                     <p>Keep your home, crops, and loved ones safe from land erosion, fire hazards, and harmful wildlife.</p>
 
                     <p>We handle projects from beginning to finish – from clearing services such as excavation, debris removal, and landscape prep to appearance upgrades like ponds, patios, and fire pits. If your job involves the outdoors, it’s our specialty.</p>
@@ -310,6 +310,7 @@
                                     <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                                 </div>
                             </div>
+                            
                             </div>
 
 
@@ -408,6 +409,30 @@
                 arrows: true,
                 infinite: true,
                 autoplay: true,
+                  responsive: [
+                    {
+                      breakpoint: 1200,
+                              settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                              }
+                            },
+                            {
+                              breakpoint: 1008,
+                              settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                              }
+                            },
+                            {
+                              breakpoint: 600,
+                              settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                              }
+                            }
+
+                          ]
 
             });
 

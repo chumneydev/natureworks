@@ -24,7 +24,7 @@ p {
         position: absolute;
         right: 60px;
         padding: 10px 20px;
-        font-weight: bold;
+        font-weight: 900 !important;
         text-transform: capitalize;
         background: rgba($white, 0.8);
         border-bottom-left-radius: 10px;
@@ -126,7 +126,10 @@ p {
     & h1 {
         text-transform: uppercase;
         font-weight: 900;
+        padding: 0 10px;
         font-size: 2rem;
+        color: $dark-grey;
+
     }
 
     & h2 {
@@ -143,7 +146,7 @@ p {
     }
 
     & p {
-        padding: 10px;
+        padding: 5px 10px;
     }
 }
 

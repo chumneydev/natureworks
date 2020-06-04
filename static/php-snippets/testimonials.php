@@ -12,8 +12,8 @@
                         </div>
             
                         <div class="testimonial-copy">
-                            <h4><?= $testimonial->testimonial_name; ?></h4>    
-                            <p><?= $testimonial->testimonial; ?></p>
+                            <p><?= $testimonial->testimonial->name; ?></p>    
+                            <p><?= $testimonial->testimonial->description; ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>

@@ -1,4 +1,3 @@
-dynamic
 static/backup
 static/_javascript
 static/_sass
@@ -8,3 +7,21 @@ static/gulpfile.js
 static/webpack.config.js
 static/package.json
 static/package-lock.json
+
+dynamic/node_modules
+dynamic/gulpfile.js
+dynamic/index.php
+dynamic/wire
+dynamic/.htaccess
+dynamic/.gitattributes
+dynamic/composer.json
+dynamic/CONTRIBUTING.md
+dynamic/LICENSE.TXT
+dynamic/README.md
+
+dynamic/site/assets
+dynamic/site/modules
+dynamic/site/.htaccess
+dynamic/site/config.php
+
+dynamic/src/scss/uikit

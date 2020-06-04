@@ -4,7 +4,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>C&S Natureworks</title>
-        <meta name="description" content="">
+        
+        <meta name="title" content="<?= $page->seo->title;?>">      
+        <meta name="description" content="<?= $page->seo->description;?>">
+        <meta name="keywords" content="<?= $page->seo->keywords;?>">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="revisit-after" content="5 days">
+        <meta name="author" content="Chumney & Associates">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="dist/css/bulma.css">
         <link rel="stylesheet" href="dist/css/slick.css">

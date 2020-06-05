@@ -1,336 +1,433 @@
-/** 
- * main.css
- * 
- * 1. General HTML tags
- * 2. Masthead area
- * 3. Main content and sidebar
- * 4. Footer
- * 5. Media queries for responsive layout
- * 6. Accessibility helpers
- * 
- */
-
-/*********************************************************************
- * 1. General HTML tags
- *
- */
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;900&display=swap");
 * {
-	box-sizing: border-box; 
+  min-height: 0;
+  min-width: 0;
 }
 
-body {
-	padding: 5%;
-	max-width: 1600px; 
-	margin: 0 auto; 
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
-body, td, input[type=text], textarea {
-	font-family: 'Quattrocento', serif;
-	font-size: 105%; 
-	line-height: 1.8em;
-	color: #444; 
+#nav {
+  border-top: 10px solid #4a9f44;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 
-img {
-	max-width: 100%; 
+#nav .call-us {
+  position: absolute;
+  right: 60px;
+  padding: 10px 20px;
+  font-weight: 900 !important;
+  text-transform: capitalize;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 12;
 }
 
-h2 {
-	font-weight: normal;
+#nav .call-us .fa-stack {
+  vertical-align: middle;
+  color: #4a9f44;
 }
 
-h3 {
-	border-top: 1px solid #eee; 
-	padding-top: 1em;
-	color: #777; 
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
-a {
-	color: #333;
-	text-decoration: none;
-	border-bottom: 1px solid #ccc; 
-}
-	a:hover,
-	.nav a:hover {
-		color: #000;
-		border-color: #aaa; 
-	}
-
-blockquote {
-	margin-left: 0;
-	padding-left: 1.5em;
-	padding-right: 2em; 
-	border-left: 4px solid #ddd; 
-	font-style: italic; 
-	color: #777; 
+#slideshow {
+  background: #333333;
 }
 
-pre, code {
-	background: #eee; 
-	border: 1px solid #ddd; 
+#slideshow .slideshow .slide {
+  position: relative;
 }
 
-pre {
-	font-size: 14px; 
-	line-height: 1.4em;
-	padding: 1em;
-	border-left: 4px solid #ddd; 
+#slideshow .slideshow .slide .copy {
+  position: absolute;
+  color: #FFFFFF;
+  left: 15%;
+  top: 25%;
+  z-index: 10;
 }
 
-/*********************************************************************
- * 2. Masthead area
- *
- */
-
-.topnav, .topnav li {
-	list-style: none; 
-	padding: 0;
-	margin: 0;
-}
-	.topnav li {
-		float: left; 
-		margin-right: 1em;
-		margin-bottom: 1em;
-	}
-	.topnav a {
-		padding: 0.25em 0.5em;
-		text-decoration: none; 
-		display: block;
-		background: #eee; 
-		color: #333; 
-		border: 1px solid #eee; 
-	}
-	.topnav a:hover {
-		background: #ddd;
-		border-color: #ddd; 
-	}
-	.topnav li.current a {
-		background: #ddd; 
-		border-color: #ddd; 
-	}
-	.topnav li.edit a {
-		background: none; 
-	}
-
-
-form.search {
-	float: right; 
-	margin: 0;
-	width: 30%; 
-}
-	form.search input {
-		margin: 0;
-		padding: 0.25em 0.5em;
-		border: 1px solid #ccc; 
-		width: 100%; 
-	}
-
-.breadcrumbs {
-	clear: both; 
-	padding-top: 1em; 
-}
-	.breadcrumbs span:after {
-		content: ">";
-		color: #999; 
-		padding-left: 0.5em;
-		padding-right: 0.25em; 
-	}
-
-/*********************************************************************
- * 3. Main content and sidebar
- *
- */
-
-#main {
-	border-top: 1px solid #eee; 
-	padding-top: 1em; 
-	margin-top: 1em; 
-	clear: both; 
+#slideshow .slideshow .slide .copy h2 {
+  font-family: 'Roboto Condensed',sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
 }
 
-#content {
-	width: 85%; 
+#slideshow .slideshow .slide .copy h3 {
+  font-size: 3rem;
+  font-family: 'Roboto Condensed',sans-serif;
 }
 
-#content, #sidebar {
-	padding-bottom: 2em; 
+#slideshow .slideshow .slide img {
+  z-index: 9;
+  opacity: 0.3;
 }
 
-body.has-sidebar #content {
-	width: 65%; 
-	float: left;
+#slideshow .slideshow .slick-dots {
+  bottom: 20px !important;
+  color: #FFFFFF;
 }
 
-body.has-sidebar #sidebar {
-	width: 35%;
-	padding-left: 5%; 
-	float: left; 
+#slideshow .slideshow.slick-slider {
+  margin-bottom: 0 !important;
 }
 
-.nav {
-	margin-left: 0;
-	padding-left: 0;
-	list-style: none; 
-}
-	.nav .nav {
-		padding-left: 1.5em;
-		list-style: disc;
-	}
-	.nav li {
-		margin: 1em 0;
-	}
-
-	.nav-tree li {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-	.nav a {
-		font-weight: bold;
-	}
-
-	.nav-tree li a {
-		color: #777; 
-	}
-
-	.nav .current > a {
-		color: #333; 
-	}
-
-.align_left {
-	/* for images placed in rich text editor */ 
-	float: left;
-	margin: 0 1em 0.5em 0; 
-	position: relative;
-	top: 0.5em;
-	max-width: 50%; 
+#services {
+  padding: 20px 0;
 }
 
-.align_right {
-	/* for images placed in rich text editor */ 
-	float: right;
-	margin: 0 0 0.5em 1em;
-	max-width: 50%; 
+#services h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #333333;
+  font-size: 2rem;
 }
 
-.align_center {
-	/* for images placed in rich text editor */ 
-	display: block;
-	margin: 1em auto; 
-	position: relative;
-	top: 0.5em;
+#services h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-figure {
-	display: table;
-	width: 1px;
-	margin: 1em 0;
+#services p {
+  font-size: 12px;
 }
 
-figure img {
-	display: table-row;
-	margin-bottom: 0.5em;
+#services .service-btn {
+  position: absolute;
+  left: 25%;
+  bottom: -20px;
 }
 
-figure figcaption {
-	display: table-row;
-	font-size: smaller;
-	color: #777;
-	line-height: 1.4em;
+#about {
+  padding: 20px 0;
 }
 
-/*********************************************************************
- * 4. Footer
- *
- */
-
-#footer {
-	clear: both; 
-	border-top: 1px solid #eee; 
-	font-size: 80%; 
+#about h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0 10px;
+  font-size: 2rem;
+  color: #333333;
 }
 
-/*********************************************************************
- * 5. Media queries for responsive layout
- *
- */
-
-@media only screen and (max-width: 767px) {
-	/* mobile layout */ 
-
-	body, td, textarea {
-		font-size: 100%; 
-	}
-	body.has-sidebar #content, 
-	body.has-sidebar #sidebar {
-		float: none;
-		width: 100%; 
-		padding: 0; 
-	}
-	form.search {
-		float: none; 
-		width: 100%; 
-	}
-	#content {
-		width: 100%; 
-	}
-	#sidebar {
-		border-top: 1px solid #eee;
-		padding-top: 1em; 
-	}
-	.align_left, .align_right, .align_center {
-		display: block;
-		float: none; 
-		margin: 1em auto;
-		max-width: 100%; 
-	}
-
+#about h2 {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 0 10px;
+  font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 1200px) {
-	/* extra-wide desktop layout */ 
-	
-	body, td, textarea {
-		font-size: 115%; 
-	}
-}
-/*********************************************************************
- * 6. Accessibility helpers
- *
- */
-
-/* Hide visually, but remain approachable for screenreader */
-
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	white-space: nowrap;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-	border: 0;
+#about .icons {
+  color: #4a9f44;
 }
 
-/* Show bypass link on hover */
-
-.element-focusable:focus {
-	clip: auto;
-	overflow: visible;
-	height: auto;
+#about p {
+  padding: 5px 10px;
 }
 
-/* Sample styling for bypass link */
+#steps {
+  position: relative;
+  padding: 20px 0;
+  background: #333333;
+}
 
-.bypass-to-main:focus {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	background: #333;
-	color: #fff;
+#steps:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/steps-2.jpg") no-repeat;
+  opacity: 0.1;
+  background-position: 0 70%;
+  background-size: cover;
+}
+
+#steps h1 {
+  padding: 0 0 0 10px;
+  font-weight: 900;
+}
+
+#steps h2 {
+  font-size: 2rem;
+  padding: 0 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+#steps h2 span {
+  border-bottom: 2px solid #4a9f44;
+  padding: 0 0 5px 0;
+}
+
+#steps h3 {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+  padding: 0 10px;
+}
+
+#steps p {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+#steps .step {
+  padding: 20px 0 20px 80px;
+  position: relative;
+}
+
+#steps .step p {
+  font-size: 14px;
+}
+
+#steps .step .number {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  font-size: 8rem;
+}
+
+/*#steps {
+    background: $dark-grey;
+    padding: 0;
+
+    & h1 {
+        padding: 0 0 0 60px;
+        font-weight: 900;
+    }
+
+    & h2 {
+        font-size: 2rem;
+        padding: 0 0 0 60px;
+        text-transform: capitalize;
+        font-weight: 900;
+
+        & span {
+            border-bottom: 2px solid $green;
+            padding: 0 0 5px 0;
+        }
+
+    }
+
+
+    & h3 {
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed',sans-serif;
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    & p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    & img {
+        width: 100%;
+        display: block;
+    }
+
+
+    & .step {
+        padding: 20px 0 20px 160px;
+        position: relative;
+
+        & p {
+            font-size: 12px;
+        }
+
+        & .number {
+            position: absolute;
+            top: -20px;
+            left: 60px;
+            font-family: 'Roboto Condensed',sans-serif;
+            font-style: italic;
+            font-size: 8rem;
+        }
+    }
+
+}*/
+#testimonials {
+  padding: 20px 0;
+}
+
+#testimonials h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #333333;
+}
+
+#testimonials .testimonial {
+  padding: 20px;
+}
+
+#testimonials .testimonial .testimonial-image {
+  width: 20%;
+  float: left;
+}
+
+#testimonials .testimonial .testimonial-image img {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #4a9f44;
+  margin: 0 auto;
+}
+
+#testimonials .testimonial .testimonial-copy {
+  width: 75%;
+  padding: 20px 0 0 20px;
+  float: left;
+  vertical-align: middle;
+}
+
+#testimonials .testimonial .testimonial-copy p {
+  font-style: italic;
+}
+
+#testimonials .testimonial .testimonial-copy p:first-of-type {
+  font-weight: 900;
+  font-style: normal;
+  color: #333333;
+}
+
+#testimonials .slick-prev:before {
+  color: #333333 !important;
+  font-size: 32px !important;
+}
+
+#testimonials .slick-next:before {
+  color: #333333 !important;
+  font-size: 32px !important;
+}
+
+#footer-top {
+  padding: 20px 0;
+  background: #333333;
+  color: #FFFFFF;
+}
+
+#footer-top .logo-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#footer-top .logo-image {
+  width: 50%;
+}
+
+#cities {
+  color: #FFFFFF;
+  background: #333333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#cities p {
+  font-family: 'Roboto Condensed',sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #4a9f44;
+  padding: 0 0 5px 0;
+  margin: 0 0 10px 0;
+}
+
+#cities ul {
+  margin: 20px 0;
+}
+
+#cities ul.cities-main li {
+  display: inline-block;
+  background-image: none;
+  padding: 0 30px;
+  position: relative;
+}
+
+#cities ul.cities-main li:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #4a9f44;
+  top: 9px;
+  right: -5px;
+  border-radius: 50px;
+}
+
+#cities ul.cities-main li:last-child:after {
+  display: none;
+}
+
+footer.footer {
+  padding: 10px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #slideshow .copy {
+    left: 50%;
+  }
+  #slideshow h2 {
+    font-size: 1rem !important;
+  }
+  #slideshow h3 {
+    font-size: 1.9rem !important;
+  }
+  #steps .step {
+    padding: 20px 0 20px 80px;
+    position: relative;
+  }
+  #steps .step p {
+    font-size: 12px;
+  }
+  #steps .step .number {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    font-size: 8rem;
+  }
+  #testimonials .testimonial-image {
+    width: 100% !important;
+    float: none !important;
+  }
+  #testimonials .testimonial-image img {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #4a9f44;
+    margin: 0 auto !important;
+  }
+  #testimonials .testimonial-copy {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 30px !important;
+  }
+  #testimonials .slick-prev {
+    left: 5px !important;
+  }
+  #testimonials .slick-next {
+    right: 15px !important;
+  }
 }

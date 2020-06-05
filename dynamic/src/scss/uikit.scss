@@ -1,3 +1,44 @@
+$white: #FFFFFF;
+$green: #4a9f44;
+$dark-grey: #333333;
+
+
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
+
+
+@mixin hook-card-primary {
+    background: $green;
+    
+}
+@mixin hook-card-secondary {
+    background: $dark-grey;
+    
+}
+
+
+@mixin hook-button-primary {
+    color: $white;
+    background: $green;
+
+}
+
+@mixin hook-button-primary-hover {
+    background: darken($green, 2%);
+
+}
+
+@mixin hook-button-secondary {
+    background: $dark-grey;
+
+}
+
+@mixin hook-button-secondary-hover {
+    background: darken($dark-grey, 2%);
+
+}
+
+
+
+@import "uikit/src/scss/uikit-theme.scss";

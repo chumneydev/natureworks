@@ -21,8 +21,10 @@ $title = $page->get('headline|title'); // headline if available, otherwise title
 $content = $page->body;
 $sidebar = $page->sidebar;
 
+$home = pages()->get('/'); // homepage
 
-$settings = $page->get('settings');
+
+$settings = pages()->get('settings');
 
 $store = $settings->contact->store;
 $email = $settings->contact->email;

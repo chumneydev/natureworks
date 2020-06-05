@@ -1,15 +1,10 @@
-<?php namespace ProcessWire;
-
-$home = pages()->get('/'); // homepage
-$siteTitle = 'Regular';	
-$siteTagline = $home->summary;
-?>
+<?php namespace ProcessWire;?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title><?php echo $title; ?></title>
+	<title><?php echo $page->seo->title; ?></title>
 	<meta name="description" content="<?php echo $page->summary; ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/uikit.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/main.css" />
@@ -31,9 +26,34 @@ $siteTagline = $home->summary;
 	    </nav>
     </header>
     <!-- header -->
+    
+    <?php if ($page->slideshow): ?>
+    <!-- slideshow -->
+    <section id="slideshow">
+        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push; max-height: 700; autoplay: true">
 
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="<?php echo $config->urls->templates?>styles/slide.jpg" alt="" uk-cover>
+                    <div class="uk-position-large uk-position-center-left uk-light">
+                        <h2>Check out our services</h2>
+                        <h3>Landscaping and more</h3>
+                        <a href="#" class="uk-button uk-button-primary">> Click for more info</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="uk-light">
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
 
+        </div>    
+    </section>
+    <!-- slideshow -->
+    <?php endif; ?>
+    
 
+    <?php if($page->services): ?>
     <!-- services -->
     <section id="services" class="uk-section">
         <div class="uk-container">
@@ -41,7 +61,6 @@ $siteTagline = $home->summary;
             
             <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
             
-            <?php if($page->services): ?>
             <?php foreach($page->services as $service): ?>    
             <?php if($service->is_secondary == true): ?>
 
@@ -55,7 +74,7 @@ $siteTagline = $home->summary;
                             <h2 class="uk-card-title"><?= $service->service_info->title; ?></h2>
                             <p><?= $service->service_info->description; ?></p>
                         </div>
-                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-primary service-btn">> Click for more info</a>
+                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-primary service-btn "> Click for more info</a>
 
                     </div>
                 </div>
@@ -73,7 +92,7 @@ $siteTagline = $home->summary;
                             <h2 class="uk-card-title"><?= $service->service_info->title; ?></h2>
                             <p><?= $service->service_info->description; ?></p>
                         </div>
-                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-secondary service-btn">> Click for more info</a>
+                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-secondary service-btn "> Click for more info</a>
 
                     </div>
                 </div>
@@ -82,13 +101,12 @@ $siteTagline = $home->summary;
 
             <?php endif; ?>
             <?php endforeach; ?>
-            <?php endif; ?>
-
             </div>        
 
         </div>
     </section>
     <!-- services -->
+    <?php endif; ?>
 
 
     <!-- about -->

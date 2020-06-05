@@ -5,5 +5,4 @@
 // See the _func.php for the renderNav() function definition. 
 // See the README.txt for more information. 
 
-$content = renderNavTree($homepage, 4); 
 

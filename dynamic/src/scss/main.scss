@@ -14,6 +14,11 @@ p {
     font-weight: 400;
 }
 
+
+header {
+    border-top: 10px solid $green;
+}
+
 #nav {
     border-top: 10px solid $green;
     position: relative;
@@ -38,7 +43,9 @@ p {
     }
 
 }
-.navbar-brand {
+.text-logo {
+    padding: 0 0 0 20px;
+    font-family: $roboto;
     text-transform: uppercase;
     font-weight: 900;
 
@@ -93,7 +100,7 @@ p {
 
 
 #services {
-    padding: 20px 0;
+    margin: 20px 0;
 
     & h1 {
         text-transform: uppercase;
@@ -124,10 +131,11 @@ p {
     padding: 20px 0;
 
     & h1 {
+        font-family: $roboto;
         text-transform: uppercase;
         font-weight: 900;
-        padding: 0 10px;
         font-size: 2rem;
+        margin: 0;
         color: $dark-grey;
 
     }
@@ -136,7 +144,7 @@ p {
         color: $dark-grey;
         text-transform: uppercase;
         font-weight: 900;
-        padding: 0 10px;
+        margin: 0;
         font-size: 1.5rem;
 
     }
@@ -146,7 +154,8 @@ p {
     }
 
     & p {
-        padding: 5px 10px;
+        margin: 0;
+        padding: 10px 0;
     }
 }
 

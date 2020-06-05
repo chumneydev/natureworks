@@ -20,7 +20,7 @@ $siteTagline = $home->summary;
     <header class='uk-background-muted'>
 	    <nav id='masthead-navbar' class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
-                <a class="" href="#">C &amp; S Natureworks</a>
+                <a class="text-logo uk-text-primary" href="#">C &amp; S Natureworks</a>
             </div>
 		    <div class="uk-navbar-right uk-visible@m">
 			    <?=ukNavbarNav($home->and($home->children), [ 
@@ -39,7 +39,7 @@ $siteTagline = $home->summary;
         <div class="uk-container">
             <h2>Our Services</h2>
             
-            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+            <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
             
             <?php if($page->services): ?>
             <?php foreach($page->services as $service): ?>    
@@ -91,22 +91,69 @@ $siteTagline = $home->summary;
     <!-- services -->
 
 
+    <!-- about -->
+    <section id="about" class="uk-section">
+        <div class="uk-container">
+            <div uk-grid>
+                <?php if($page->youtube): ?>
+                <div class="uk-width-1-2">
+	    		    <?php echo $content; ?>
+                </div>
 
+                <div class="uk-width-1-2">
+                    <iframe width="100%" height="315" src="<?= $page->youtube; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <?php else: ?>
+                <div class="uk-width-auto@m">
+	    		    <?php echo $content; ?>
+                </div>
 
+                <?php endif; ?>
 
-    <div class="uk-container">
-        <div uk-grid>
-            <div class="uk-width-3-4">
-    			<h1><?php echo $title; ?></h1>
-	    		<?php echo $content; ?>
-            </div>
-            <div class="uk-width-1-4">
-    			<h1><?php echo $title; ?></h1>
             </div>
         </div>
+    </section>
+    <!-- about -->
 
 
-    </div>
+    <!-- testimonials -->
+
+    <section id="testimonials" class="uk-section">
+        <div class="uk-container">
+            <div uk-grid>
+
+                    <div class="uk-width-auto@m">
+
+                    <div id="slider" uk-slider>
+                        <div class="uk-position-relative">
+                            <div class="uk-slider-container">
+                                <ul class="uk-slider-items">
+                                    <li>Hey</li>
+                                    <li>Hey</li>
+                                    <li>Hey</li>
+                                </ul>
+                            </div>
+
+                            <a class="uk-position-center-left-out" href="#" uk-slider-item="previous">...</a>
+                            <a class="uk-position-center-right-out" href="#" uk-slider-item="next">...</a>
+                        </div>
+                    <ul class="uk-slider-nav uk-dotnav"></ul>
+
+            </div>
+
+
+
+
+
+
+                    </div> 
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- testimonials -->
 
 
 
@@ -124,6 +171,17 @@ $siteTagline = $home->summary;
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="<?php echo $config->urls->templates?>scripts/uikit.min.js"></script>
+        <script src="<?php echo $config->urls->templates?>scripts/all.min.js"></script>
+
+
+        <script type="text/javascript">
+            UIkit.slider("#slider", {
+                    autoplay: true,
+                    center: true,
+                });
+        
+        </script>
+
 
 </body>
 </html>

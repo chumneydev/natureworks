@@ -2248,6 +2248,7 @@ select.uk-form-width-xsmall {
 .uk-button-primary.uk-active {
   background-color: #0e6ecd;
   color: #fff;
+  background: #479841;
 }
 
 /*
@@ -2272,6 +2273,7 @@ select.uk-form-width-xsmall {
 .uk-button-secondary.uk-active {
   background-color: #090909;
   color: #fff;
+  background: #2e2e2e;
 }
 
 /*
@@ -11948,4 +11950,12 @@ iframe.uk-cover {
   h3 {
     page-break-after: avoid;
   }
+}
+
+.uk-text-primary {
+  color: #4a9f44 !important;
+}
+
+.uk-text-secondary {
+  color: #333333 !important;
 }

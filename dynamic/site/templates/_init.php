@@ -22,6 +22,22 @@ $content = $page->body;
 $sidebar = $page->sidebar;
 
 
+$settings = $page->get('settings');
+
+$store = $settings->contact->store;
+$email = $settings->contact->email;
+$phone = $settings->contact->phone;
+$street = $settings->contact->street;
+$location = $settings->contact->location;
+$facebook = $settings->contact->facebook;
+
+
+
+
+
+
+
+
 // We refer to our homepage a few times in our site, so we preload a copy 
 // here in a $homepage variable for convenience. 
 $homepage = $pages->get('/'); 

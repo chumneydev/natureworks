@@ -161,13 +161,20 @@
     <section id="footer-top" class="uk-section">
         <div class="uk-container">
             <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match uk-vertical-align uk-flex uk-flex-center uk-flex-middle" uk-grid>
-                <div class="uk-vertical-align-middle">
-                    <p class="logo-text"><?= $store; ?></p>
+                <div class="uk-vertical-align-middle uk-text-center">
+                   <p class="logo-text"><?= $store; ?></p>
                 </div>
                 <div class="uk-vertical-align-middle">
-                    <img src="<?= $logo->url; ?>" alt="<?= $logo->description; ?>" class="logo-image" />
+                    <img src="<?= $logo->url; ?>" alt="<?= $logo->description; ?>" class="logo-image uk-align-center" />
                 </div>
-                <div class="uk-vertical-align-middle"></div>
+                <div class="uk-vertical-align-middle">
+                    <ul class="uk-text-center">
+                        <li><?= $phone; ?></li>
+                        <li><?= $email; ?></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Like Us on Facebook</a></li>
+                    </ul>    
+
+                </div>
 
             </div>
         </div>
@@ -182,8 +189,29 @@
             <div uk-grid>
                 <div>
                     <p>Areas we Serve</p>
-                    <?= $counties; ?>
-                    <?= $cities; ?>
+                    <?php $countylines = explode("\n", $counties); ?>
+                    <?php if($countylines): ?>
+                    <ul class="cities-main uk-text-center">
+                        <?php foreach($countylines as $county): ?>
+                        <li><?= $county; ?>                    
+                        <?php endforeach; ?>
+                    </ul>
+                    <?php endif; ?>
+
+
+                    <?php $citylines = explode("\n", $cities); ?>
+                    <?php if($citylines): ?>
+                    <ul class="cities-main uk-text-center">
+                        <?php foreach($citylines as $city): ?>
+                        <li><?= $city; ?>                    
+                        <?php endforeach; ?>
+                    </ul>
+                    <?php endif; ?>
+
+
+
+
+
                 </div>
             </div>
 
@@ -195,9 +223,12 @@
 
 
 	<!-- footer -->
-	<footer id='footer'>
-	</footer>
-
+    <footer class="footer">
+        <div class="content">
+            <?php $currentYear = date('Y'); ?>
+            <p>&copy; <?= $currentYear; ?> Chumney & Associates</p>
+        </div>
+    </footer>
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="<?php echo $config->urls->templates?>scripts/uikit.min.js"></script>

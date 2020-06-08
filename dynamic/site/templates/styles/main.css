@@ -326,6 +326,19 @@ header {
   flex: none;
 }
 
+#footer-top ul {
+  list-style: none;
+}
+
+#footer-top ul li {
+  margin: 0;
+  padding: 0;
+}
+
+#footer-top ul li a {
+  color: #4a9f44;
+}
+
 #cities {
   color: #FFFFFF;
   background: #333333;
@@ -373,6 +386,8 @@ header {
 }
 
 footer.footer {
+  background: #4a9f44;
+  color: #FFFFFF;
   padding: 10px !important;
 }
 

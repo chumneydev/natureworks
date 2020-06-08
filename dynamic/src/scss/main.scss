@@ -371,6 +371,19 @@ header {
         width: auto !important;
         flex:none;
     }
+
+    & ul {
+        list-style: none;
+
+        & li {
+            margin: 0;
+            padding: 0;
+
+            & a {
+                color: $green;
+            }
+        }
+    }
 }
 
 
@@ -429,6 +442,8 @@ header {
 footer {
 
     &.footer {
+        background: $green;
+        color: $white;
         padding: 10px !important;
     }
 }

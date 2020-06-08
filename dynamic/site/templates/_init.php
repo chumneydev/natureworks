@@ -32,8 +32,8 @@ $phone = $settings->contact->phone;
 $street = $settings->contact->street;
 $location = $settings->contact->location;
 $facebook = $settings->contact->facebook;
-$counties = $settings->contact->counties;
-$cities = $settings->contact->cities;
+$counties = $settings->areas->counties;
+$cities = $settings->areas->cities;
 
 $logo = $settings->images->first();
 

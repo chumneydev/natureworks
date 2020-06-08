@@ -48,40 +48,23 @@ header {
   background: #333333;
 }
 
-#slideshow .slideshow .slide {
-  position: relative;
-}
-
-#slideshow .slideshow .slide .copy {
-  position: absolute;
-  color: #FFFFFF;
-  left: 15%;
-  top: 25%;
-  z-index: 10;
-}
-
-#slideshow .slideshow .slide .copy h2 {
+#slideshow .copy h2 {
   font-family: 'Roboto Condensed',sans-serif;
   text-transform: uppercase;
   font-size: 4rem;
 }
 
-#slideshow .slideshow .slide .copy h3 {
+#slideshow .copy h3 {
   font-size: 3rem;
   font-family: 'Roboto Condensed',sans-serif;
 }
 
-#slideshow .slideshow .slide img {
-  z-index: 9;
-  opacity: 0.3;
-}
-
-#slideshow .slideshow .slick-dots {
+#slideshow .slick-dots {
   bottom: 20px !important;
   color: #FFFFFF;
 }
 
-#slideshow .slideshow.slick-slider {
+#slideshow.slick-slider {
   margin-bottom: 0 !important;
 }
 
@@ -339,7 +322,8 @@ header {
 }
 
 #footer-top .logo-image {
-  width: 50%;
+  width: auto !important;
+  flex: none;
 }
 
 #cities {
@@ -358,10 +342,12 @@ header {
   border-bottom: 2px solid #4a9f44;
   padding: 0 0 5px 0;
   margin: 0 0 10px 0;
+  text-align: center;
 }
 
 #cities ul {
-  margin: 20px 0;
+  margin: 20px auto;
+  list-style: none;
 }
 
 #cities ul.cities-main li {

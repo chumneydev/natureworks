@@ -33,14 +33,25 @@
         <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push; max-height: 700; autoplay: true">
 
             <ul class="uk-slideshow-items">
-                <li>
-                    <img src="<?php echo $config->urls->templates?>styles/slide.jpg" alt="" uk-cover>
-                    <div class="uk-position-large uk-position-center-left uk-light">
+                <?php foreach ($page->slideshow as $slide): ?>
+                <!--<li>
+                    <img src="styles/slide.jpg" alt="" uk-cover>
+                    <div class="uk-position-large uk-position-center-left uk-light copy">
                         <h2>Check out our services</h2>
                         <h3>Landscaping and more</h3>
                         <a href="#" class="uk-button uk-button-primary">> Click for more info</a>
                     </div>
+                </li>-->
+                <li>
+                    <img src="<?= $slide->images->first()->url; ?>" alt="<?= $slide->images->first()->description; ?>" uk-cover>
+                    
+                    <div class="uk-position-large uk-position-center-left uk-light copy">
+                        <?= $slide->body; ?>
+                        <a href="<?= $slide->link_to_page->url; ?>" class="uk-button uk-button-primary">> Click for more info</a>
+                    </div>
                 </li>
+
+                <?php endforeach; ?>
             </ul>
             <div class="uk-light">
                 <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
@@ -58,7 +69,7 @@
     <section id="services" class="uk-section">
         <div class="uk-container">
             <h2>Our Services</h2>
-            
+            <?= $email; ?>
             <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
             
             <?php foreach($page->services as $service): ?>    
@@ -74,7 +85,7 @@
                             <h2 class="uk-card-title"><?= $service->service_info->title; ?></h2>
                             <p><?= $service->service_info->description; ?></p>
                         </div>
-                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-primary service-btn "> Click for more info</a>
+                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-primary service-btn "> > Click for more info</a>
 
                     </div>
                 </div>
@@ -92,7 +103,7 @@
                             <h2 class="uk-card-title"><?= $service->service_info->title; ?></h2>
                             <p><?= $service->service_info->description; ?></p>
                         </div>
-                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-secondary service-btn "> Click for more info</a>
+                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-secondary service-btn "> > Click for more info</a>
 
                     </div>
                 </div>
@@ -135,40 +146,9 @@
 
 
     <!-- testimonials -->
-
     <section id="testimonials" class="uk-section">
         <div class="uk-container">
-            <div uk-grid>
 
-                    <div class="uk-width-auto@m">
-
-                    <div id="slider" uk-slider>
-                        <div class="uk-position-relative">
-                            <div class="uk-slider-container">
-                                <ul class="uk-slider-items">
-                                    <li>Hey</li>
-                                    <li>Hey</li>
-                                    <li>Hey</li>
-                                </ul>
-                            </div>
-
-                            <a class="uk-position-center-left-out" href="#" uk-slider-item="previous">...</a>
-                            <a class="uk-position-center-right-out" href="#" uk-slider-item="next">...</a>
-                        </div>
-                    <ul class="uk-slider-nav uk-dotnav"></ul>
-
-            </div>
-
-
-
-
-
-
-                    </div> 
-
-
-
-            </div>
         </div>
     </section>
     <!-- testimonials -->
@@ -176,8 +156,40 @@
 
 
 
+                    
+    <!-- footer-top -->
+    <section id="footer-top" class="uk-section">
+        <div class="uk-container">
+            <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match uk-vertical-align uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                <div class="uk-vertical-align-middle">
+                    <p class="logo-text"><?= $store; ?></p>
+                </div>
+                <div class="uk-vertical-align-middle">
+                    <img src="<?= $logo->url; ?>" alt="<?= $logo->description; ?>" class="logo-image" />
+                </div>
+                <div class="uk-vertical-align-middle"></div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- footer-top -->
 
 
+    <!-- areas -->
+    <section id="cities">
+        <div class="uk-container">
+            <div uk-grid>
+                <div>
+                    <p>Areas we Serve</p>
+                    <?= $counties; ?>
+                    <?= $cities; ?>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- areas -->
 
 
 
@@ -192,13 +204,7 @@
         <script src="<?php echo $config->urls->templates?>scripts/all.min.js"></script>
 
 
-        <script type="text/javascript">
-            UIkit.slider("#slider", {
-                    autoplay: true,
-                    center: true,
-                });
-        
-        </script>
+   
 
 
 </body>

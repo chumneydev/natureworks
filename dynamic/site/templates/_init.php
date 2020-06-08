@@ -24,7 +24,7 @@ $sidebar = $page->sidebar;
 $home = pages()->get('/'); // homepage
 
 
-$settings = pages()->get('settings');
+$settings = pages()->get('/settings/');
 
 $store = $settings->contact->store;
 $email = $settings->contact->email;
@@ -32,8 +32,10 @@ $phone = $settings->contact->phone;
 $street = $settings->contact->street;
 $location = $settings->contact->location;
 $facebook = $settings->contact->facebook;
+$counties = $settings->contact->counties;
+$cities = $settings->contact->cities;
 
-
+$logo = $settings->images->first();
 
 
 

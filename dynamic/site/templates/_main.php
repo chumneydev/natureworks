@@ -11,20 +11,97 @@
 </head>
 <body>
 
+<header>
+    <?php
+        $home = $pages->get("/");
+        $children = $home->children("!template=settings|sitemap");
+
+    ?>
+
+    <!-- nav -->
+    <nav class="uk-navbar" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active">
+                    <a class="text-logo uk-text-primary" href="#">C &amp; S Natureworks</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-visible@s">
+                <!--<li><a class="uk-text-large" href="#">about</a></li>
+                <li><a class="uk-text-large" href="#">blog</a></li>-->
+
+                <?php foreach ($children as $child): ?>
+                <?php if ($child->hasChildren()): ?>
+                <li>
+                <a href="#"><?= $child->title; ?></a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <?php foreach ($child->children as $inner): ?>
+                        <li><a href="#"><?= $inner->title; ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                </li>
+
+                <?php else : ?>
+                <li><a class="uk-text-large" href="#"><?= $child->title; ?></a></li>
+
+                <?php endif; ?>
+                <?php endforeach; ?>
+
+            </ul>
+            <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+
+        </div>
+    </nav>
+
+         <div id="sidenav" uk-offcanvas="" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <a href="" class="uk-navbar-item uk-logo">Brand</a>
+                <ul class="uk-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 78">
+                    <li>
+                        <a href="#section-1">Section-1</a>
+                    </li>
+                    <li>
+                        <a href="#section-2">Section-2</a>
+                    </li>
+                    <li>
+                        <a href="#section-3">Section-3</a>
+                    </li>
+                    <li>
+                        <a href="#section-4">Section-4</a>
+                    </li>
+                    <li>
+                        <a href="#section-5">Section-5</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- nav -->
+
+
+
+
+    </header>
+
+
+
+
+
     <!-- header -->
-    <header class='uk-background-muted'>
+    <!--<header class='uk-background-muted'>
 	    <nav id='masthead-navbar' class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
                 <a class="text-logo uk-text-primary" href="#">C &amp; S Natureworks</a>
             </div>
-		    <div class="uk-navbar-right uk-visible@m">
-			    <?=ukNavbarNav($home->and($home->children), [ 
-				    'dropdown' => [ 'basic-page', 'categories' ]
-                    ])
-                ?>
+		    <div class="uk-navbar-right">
 		    </div>
 	    </nav>
-    </header>
+    </header>-->
     <!-- header -->
     
     <?php if ($page->slideshow): ?>
@@ -69,7 +146,6 @@
     <section id="services" class="uk-section">
         <div class="uk-container">
             <h2>Our Services</h2>
-            <?= $email; ?>
             <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
             
             <?php foreach($page->services as $service): ?>    

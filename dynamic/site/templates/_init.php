@@ -37,7 +37,8 @@ $cities = $settings->areas->cities;
 
 $logo = $settings->images->first();
 
-
+$steps = $settings->steps_background;
+$testimonials = $settings->testimonials;
 
 
 

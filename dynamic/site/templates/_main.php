@@ -195,7 +195,7 @@
     <!-- services -->
     <?php endif; ?>
 
-
+    <?php if($content): ?>
     <!-- about -->
     <section id="about" class="uk-section">
         <div class="uk-container">
@@ -219,11 +219,98 @@
         </div>
     </section>
     <!-- about -->
+    <?php endif; ?>
+
+
+
+                <!--        <div uk-slider="center: true; autoplay: true;finite: true">
+            <div class="uk-slider-container">
+                <ul class="uk-slider-items uk-child-width-1-3@m uk-grid">
+                -->
+    
+
+    <section id="steps" class="uk-section" data-src="<?= $steps->url; ?>" uk-img>
+        <div class="uk-container">
+            <div uk-grid>
+                <div>
+                    <h1>Why Choose Us?</h1>
+                    <h2><span>The Reasons</span> Why  you should contact us...</h2>
+                    <div class="step">
+                        <p class="number">1</p>
+                        <h3>Experience</h3>
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+                    </div>
+    
+                    <div class="step">
+                        <p class="number">2</p>
+                        <h3>Quality</h3>
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+                    </div>
+
+                    <div class="step">
+                        <p class="number">3</p>
+                        <h3>Satisfaction</h3>
+                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    <!--<ul class="uk-slider-items uk-child-width-1-1 uk-grid uk-grid-small">-->
 
 
     <!-- testimonials -->
     <section id="testimonials" class="uk-section">
         <div class="uk-container">
+
+            <div uk-slider="autoplay: true;">
+
+                <div class="uk-position-relative">
+
+                    <div class="uk-slider-container">
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-grid uk-grid-small">
+                            <?php foreach ($testimonials as $testimonial): ?>
+                            <li>
+                                <div class="uk-panel">
+                                    <img src="<?= $testimonial->images->first()->url; ?>" class="uk-align-left@m uk-align-center" />
+                                    <?= $testimonial->body; ?>
+                                </div>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+
+                    <div class="uk-hidden@s">
+                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                </div>
+
+    <!--<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>-->
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
     </section>
@@ -316,3 +403,7 @@
 
 </body>
 </html>
+
+
+
+

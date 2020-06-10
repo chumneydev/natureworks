@@ -239,6 +239,41 @@
     <?php endif; ?>
 
 
+        <section class="uk-section">
+            <div class="uk-container">
+                <form class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" type="text" placeholder="Full Name">
+                    </div>
+                    
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="text" placeholder="Email Address">
+                    </div>
+                    
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="text" placeholder="Phone Number">
+                    </div>
+
+                    <div class="uk-width-1-1">
+                        <input class="uk-textarea" type="text" placeholder="Phone Number">
+                </div>
+
+                </form> 
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <!--        <div uk-slider="center: true; autoplay: true;finite: true">
             <div class="uk-slider-container">

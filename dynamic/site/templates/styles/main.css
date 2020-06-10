@@ -415,13 +415,11 @@ footer.footer {
 }
 
 @media only screen and (max-width: 600px) {
-  #slideshow .copy {
-    left: 50%;
-  }
   #slideshow h2 {
     font-size: 1rem !important;
   }
   #slideshow h3 {
+    margin-top: 0;
     font-size: 1.9rem !important;
   }
   #steps .step {

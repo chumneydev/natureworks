@@ -3,3 +3,4 @@
 // home.php (homepage) template file. 
 // See README.txt for more information
 
+$content = $page->body;

@@ -23,7 +23,7 @@
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li class="uk-active">
-                    <a class="text-logo uk-text-primary" href="#">C &amp; S Natureworks</a>
+                    <a class="text-logo uk-text-primary" href="<?= $home->url; ?>">C &amp; S Natureworks</a>
                 </li>
             </ul>
         </div>
@@ -40,14 +40,14 @@
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         <?php foreach ($child->children as $inner): ?>
-                        <li><a href="#"><?= $inner->title; ?></a></li>
+                        <li><a href="<?= $inner->url; ?>"><?= $inner->title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
                 </li>
 
                 <?php else : ?>
-                <li><a class="uk-text-large" href="#"><?= $child->title; ?></a></li>
+                <li><a class="uk-text-large" href="<?= $child->url; ?>"><?= $child->title; ?></a></li>
 
                 <?php endif; ?>
                 <?php endforeach; ?>
@@ -60,24 +60,24 @@
 
          <div id="sidenav" uk-offcanvas="" class="uk-offcanvas">
             <div class="uk-offcanvas-bar">
-                <a href="" class="uk-navbar-item uk-logo">Brand</a>
+                <!--<a href="" class="uk-navbar-item uk-logo">Brand</a>-->
                 <ul class="uk-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 78">
-                    <li>
-                        <a href="#section-1">Section-1</a>
-                    </li>
-                    <li>
-                        <a href="#section-2">Section-2</a>
-                    </li>
-                    <li>
-                        <a href="#section-3">Section-3</a>
-                    </li>
-                    <li>
-                        <a href="#section-4">Section-4</a>
-                    </li>
-                    <li>
-                        <a href="#section-5">Section-5</a>
-                    </li>
-                </ul>
+         <?php foreach ($children as $child): ?>
+                <?php if ($child->hasChildren()): ?>
+                <li>
+                <a href="#" class="uk-text-large"><?= $child->title; ?></a>
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <?php foreach ($child->children as $inner): ?>
+                        <li><a href="<?= $inner->url; ?>"><?= $inner->title; ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </li>
+
+                <?php else : ?>
+                <li><a class="uk-text-large" href="<?= $child->url; ?>"><?= $child->title; ?></a></li>
+
+                <?php endif; ?>
+                <?php endforeach; ?>                </ul>
             </div>
         </div>
 
@@ -195,6 +195,9 @@
     <!-- services -->
     <?php endif; ?>
 
+
+
+    <?php if($page->title !== "Gallery"): ?>
     <?php if($content): ?>
     <!-- about -->
     <section id="about" class="uk-section">
@@ -219,6 +222,20 @@
         </div>
     </section>
     <!-- about -->
+    <?php endif; ?>
+
+    <?php else: ?>
+
+    <section id="gallery" class="uk-section">
+        <div class="uk-container">
+            <div uk-grid>
+                <div>
+                    <?= $content; ?>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <?php endif; ?>
 
 

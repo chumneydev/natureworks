@@ -13,14 +13,7 @@ header {
   border-top: 10px solid #4a9f44;
 }
 
-#nav {
-  border-top: 10px solid #4a9f44;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-}
-
-#nav .call-us {
+header .call-us {
   position: absolute;
   right: 60px;
   padding: 10px 20px;
@@ -32,9 +25,20 @@ header {
   z-index: 12;
 }
 
-#nav .call-us .fa-stack {
+header .call-us p {
+  margin: 0;
+}
+
+header .call-us .fa-stack {
   vertical-align: middle;
   color: #4a9f44;
+}
+
+#nav {
+  border-top: 10px solid #4a9f44;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 
 .text-logo {

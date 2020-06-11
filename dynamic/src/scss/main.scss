@@ -17,13 +17,7 @@ p {
 
 header {
     border-top: 10px solid $green;
-}
 
-#nav {
-    border-top: 10px solid $green;
-    position: relative;
-    font-family: $roboto;
-    font-weight: 900;
 
     & .call-us {
         position: absolute;
@@ -36,11 +30,25 @@ header {
         border-bottom-right-radius: 10px;
         z-index: 12;
 
+        & p {
+            margin: 0;
+        }
+
         & .fa-stack {
             vertical-align: middle;
             color: $green;
         }
     }
+
+
+
+}
+
+#nav {
+    border-top: 10px solid $green;
+    position: relative;
+    font-family: $roboto;
+    font-weight: 900;
 
 }
 .text-logo {

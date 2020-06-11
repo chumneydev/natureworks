@@ -83,6 +83,15 @@
 
     <!-- nav -->
 
+        <div class="call-us">
+            <p>
+                <span class="fa-stack fa-sm">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-phone fa-stack-1x fa-inverse fa-flip-horizontal"></i>
+                </span>
+                Call us Anytime: <a href="tel:864-415-7979"><?= $phone; ?></a>
+            </p>
+        </div>    
 
 
 
@@ -226,7 +235,7 @@
 
     <?php else: ?>
 
-    <section id="gallery" class="uk-section">
+    <section id="content" class="uk-section">
         <div class="uk-container">
             <div uk-grid>
                 <div>
@@ -237,42 +246,6 @@
     </section>
     
     <?php endif; ?>
-
-
-        <section class="uk-section">
-            <div class="uk-container">
-                <form class="uk-grid-small" uk-grid>
-                    <div class="uk-width-1-1">
-                        <input class="uk-input" type="text" placeholder="Full Name">
-                    </div>
-                    
-                    <div class="uk-width-1-2@s">
-                        <input class="uk-input" type="text" placeholder="Email Address">
-                    </div>
-                    
-                    <div class="uk-width-1-2@s">
-                        <input class="uk-input" type="text" placeholder="Phone Number">
-                    </div>
-
-                    <div class="uk-width-1-1">
-                        <input class="uk-textarea" type="text" placeholder="Phone Number">
-                </div>
-
-                </form> 
-
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
 
 
                 <!--        <div uk-slider="center: true; autoplay: true;finite: true">

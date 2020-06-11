@@ -3,7 +3,7 @@
 
 
 
-$content = wireRenderFile('partials/gallery.php');
+$content = wireRenderFile('partials/gallery-items.php');
 
 
 ?>

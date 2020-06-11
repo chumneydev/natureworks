@@ -1,8 +1,5 @@
 <?php namespace ProcessWire; ?>
 
-<section class="uk-section"> 
-    <div class="uk-container">
-
    <?php if($page->access_road): ?>
         <h2>Access Roads</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
@@ -128,9 +125,3 @@
         </div>
     <?php endif; ?>
 
-
-    
-
-
-    </div>
-<section>

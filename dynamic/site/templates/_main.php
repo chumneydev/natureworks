@@ -77,7 +77,8 @@
                 <li><a class="uk-text-large" href="<?= $child->url; ?>"><?= $child->title; ?></a></li>
 
                 <?php endif; ?>
-                <?php endforeach; ?>                </ul>
+                <?php endforeach; ?>
+                </ul>
             </div>
         </div>
 
@@ -89,7 +90,7 @@
                     <i class="fas fa-circle fa-stack-2x"></i>
                     <i class="fas fa-phone fa-stack-1x fa-inverse fa-flip-horizontal"></i>
                 </span>
-                Call us Anytime: <a href="tel:864-415-7979"><?= $phone; ?></a>
+                Call us Anytime: <a href="tel:<?= $phone; ?>"><?= $phone; ?></a>
             </p>
         </div>    
 
@@ -254,13 +255,25 @@
                 -->
     
 
-    <section id="steps" class="uk-section" data-src="<?= $steps->url; ?>" uk-img>
+    <section id="steps" class="uk-section" data-src="<?= $stepsBackground->url; ?>" uk-img>
         <div class="uk-container">
             <div uk-grid>
                 <div>
                     <h1>Why Choose Us?</h1>
                     <h2><span>The Reasons</span> Why  you should contact us...</h2>
+
+                    <?php
+                        $count = 1;
+                        foreach($reasons as $reason):
+                    ?>
                     <div class="step">
+                        <p class="number"><?= $count++; ?></p>
+                        <?= $reason->body; ?>
+                    </div>    
+
+                    <?php endforeach; ?>
+
+                    <!--<div class="step">
                         <p class="number">1</p>
                         <h3>Experience</h3>
                         <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -277,7 +290,7 @@
                         <h3>Satisfaction</h3>
                         <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </section>

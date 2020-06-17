@@ -1,6 +1,6 @@
 <?php namespace ProcessWire; ?>
 
-   <?php if($page->access_road): ?>
+   <?php if(count($page->access_road)): ?>
         <h2>Access Roads</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
             <?php foreach($page->access_road as $image): ?>
@@ -12,7 +12,7 @@
         </div>
     <?php endif; ?>
 
-    <?php if($page->food_plots): ?>
+    <?php if(count($page->food_plots)): ?>
         <h2>Food Plots</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
             <?php foreach($page->food_plots as $image): ?>
@@ -23,7 +23,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if($page->food_plots_hunting): ?>
+    <?php if(count($page->food_plots_hunting)): ?>
         <h2>Food Plots: Hunting</h2>
 
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
@@ -35,7 +35,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if($page->foresrty_mulcher): ?>
+    <?php if(count($page->foresrty_mulcher)): ?>
         <h2>Forestry Mulcher</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
             <?php foreach($page->foresrty_mulcher as $image): ?>
@@ -46,7 +46,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if($page->gant_greenville): ?>
+    <?php if(count($page->gant_greenville)): ?>
         <h2>Gannt Greenville</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
             <?php foreach($page->gant_greenville as $image): ?>
@@ -57,7 +57,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if($page->imports): ?>
+    <?php if(count($page->imports)): ?>
         <h2>Imports</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
             <?php foreach($page->imports as $image): ?>
@@ -68,7 +68,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if($page->land_clearing): ?>
+    <?php if(count($page->land_clearing)): ?>
         <h2>Land Clearing</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
             <?php foreach($page->land_clearing as $image): ?>
@@ -79,7 +79,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if($page->land_management): ?>
+    <?php if(count($page->land_management)): ?>
         <h2>Land Management</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
             <?php foreach($page->land_management as $image): ?>
@@ -90,7 +90,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if($page->patios): ?>
+    <?php if(count($page->patios)): ?>
         <h2>Patios</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
             <?php foreach($page->patios as $image): ?>
@@ -101,7 +101,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if($page->recreational): ?>
+    <?php if(count($page->recreational)): ?>
         <h2>Recreational</h2>
 
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
@@ -113,7 +113,7 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    <?php if($page->trails): ?>
+    <?php if(count($page->trails)): ?>
         <h2>Trails</h2>
         <div class="uk-child-width-1-4@m" uk-grid="masonry: true;" uk-lightbox="animation: scale">
             <?php foreach($page->trails as $image): ?>

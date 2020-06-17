@@ -10,6 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo $config->urls->templates?>styles/main.css" />
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDSRB5C"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <header>
     <?php
@@ -17,13 +21,13 @@
         $children = $home->children("!template=settings|sitemap");
 
     ?>
-
+    <div class="uk-container">
     <!-- nav -->
     <nav class="uk-navbar" uk-navbar>
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li class="uk-active">
-                    <a class="text-logo uk-text-primary" href="<?= $home->url; ?>">C &amp; S Natureworks</a>
+                    <a class="text-logo text-header uk-text-primary" href="<?= $home->url; ?>">C &amp; S Natureworks</a>
                 </li>
             </ul>
         </div>
@@ -32,7 +36,7 @@
             <ul class="uk-navbar-nav uk-visible@s">
                 <!--<li><a class="uk-text-large" href="#">about</a></li>
                 <li><a class="uk-text-large" href="#">blog</a></li>-->
-
+                <li><a class="uk-text-large" href="<?= $home->url; ?>"><?= $home->title; ?></a></li>
                 <?php foreach ($children as $child): ?>
                 <?php if ($child->hasChildren()): ?>
                 <li>
@@ -57,7 +61,7 @@
 
         </div>
     </nav>
-
+    </div>
          <div id="sidenav" uk-offcanvas="" class="uk-offcanvas">
             <div class="uk-offcanvas-bar">
                 <!--<a href="" class="uk-navbar-item uk-logo">Brand</a>-->
@@ -83,7 +87,7 @@
         </div>
 
     <!-- nav -->
-
+        <?php if ($page->title == "Home"): ?>
         <div class="call-us">
             <p>
                 <span class="fa-stack fa-sm">
@@ -93,7 +97,7 @@
                 Call us Anytime: <a href="tel:<?= $phone; ?>"><?= $phone; ?></a>
             </p>
         </div>    
-
+        <?php endif; ?>
 
 
     </header>
@@ -114,7 +118,7 @@
     </header>-->
     <!-- header -->
     
-    <?php if ($page->slideshow): ?>
+    <?php if (count($page->slideshow)): ?>
     <!-- slideshow -->
     <section id="slideshow">
         <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="animation: push; max-height: 700; autoplay: true">
@@ -171,7 +175,7 @@
                             <h2 class="uk-card-title"><?= $service->service_info->title; ?></h2>
                             <p><?= $service->service_info->description; ?></p>
                         </div>
-                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-primary service-btn "> > Click for more info</a>
+                        <a href="<?= $service->link_to_page->url ?>" class="uk-button uk-button-primary service-btn "> > Click for more info</a>
 
                     </div>
                 </div>
@@ -189,7 +193,7 @@
                             <h2 class="uk-card-title"><?= $service->service_info->title; ?></h2>
                             <p><?= $service->service_info->description; ?></p>
                         </div>
-                        <a href="<?= $service->service_info->url ?>" class="uk-button uk-button-secondary service-btn "> > Click for more info</a>
+                        <a href="<?= $service->link_to_page->url ?>" class="uk-button uk-button-secondary service-btn "> > Click for more info</a>
 
                     </div>
                 </div>
@@ -214,11 +218,11 @@
         <div class="uk-container">
             <div uk-grid>
                 <?php if($page->youtube): ?>
-                <div class="uk-width-1-2">
+                <div class="uk-width-1-2@m">
 	    		    <?php echo $content; ?>
                 </div>
 
-                <div class="uk-width-1-2">
+                <div class="uk-width-1-2@m">
                     <iframe width="100%" height="315" src="<?= $page->youtube; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 <?php else: ?>
@@ -273,24 +277,7 @@
 
                     <?php endforeach; ?>
 
-                    <!--<div class="step">
-                        <p class="number">1</p>
-                        <h3>Experience</h3>
-                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
                     </div>
-    
-                    <div class="step">
-                        <p class="number">2</p>
-                        <h3>Quality</h3>
-                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
-                    </div>
-
-                    <div class="step">
-                        <p class="number">3</p>
-                        <h3>Satisfaction</h3>
-                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum.</p>
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </section>
@@ -301,7 +288,7 @@
 
     <!--<ul class="uk-slider-items uk-child-width-1-1 uk-grid uk-grid-small">-->
 
-
+    <?php if(count($testimonials)): ?>
     <!-- testimonials -->
     <section id="testimonials" class="uk-section">
         <div class="uk-container">
@@ -338,22 +325,10 @@
     <!--<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>-->
 
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
+    </div>
     </section>
     <!-- testimonials -->
-
+    <?php endif; ?>
 
 
 
@@ -372,7 +347,7 @@
                     <ul class="uk-text-center">
                         <li><?= $phone; ?></li>
                         <li><?= $email; ?></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i> Like Us on Facebook</a></li>
+                        <li><a href="<?= $facebook; ?>"><i class="fab fa-facebook"></i> Like Us on Facebook</a></li>
                     </ul>    
 
                 </div>

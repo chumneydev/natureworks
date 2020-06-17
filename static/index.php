@@ -123,7 +123,7 @@
                         <div class="card-content">
                             <div class="content">
                             <h2>Land Management</h2>
-                                <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum.</p>
+                                <p>C & S Nature Works offers a full range of land clearing services to make your property ready for development that fits your vision. Whether you’re clearing brush to create a pasture for cattle or excavating land to prepare for residential construction, our services run the gamut. Previous customers have turned to us to create access roads, remove debris, clear land for food plots, prepare land for building foundation, and much more</p>
                             </div>
                         </div>
                         <a href="#" class="button is-secondary service-btn">> Click for more info</a>

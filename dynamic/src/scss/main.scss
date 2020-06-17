@@ -18,10 +18,13 @@ p {
 header {
     border-top: 10px solid $green;
 
+    & .text-header {
+        font-size: 1.5rem !important;
+    }
 
     & .call-us {
         position: absolute;
-        right: 60px;
+        right: 320px;
         padding: 10px 20px;
         font-weight: 900 !important;
         text-transform: capitalize;
@@ -110,7 +113,7 @@ header {
     }
     & .service-btn {
         position: absolute;
-        left: 20%;
+        left: 18%;
         bottom: -20px;
     }
 
@@ -128,7 +131,7 @@ header {
         font-size: 2rem;
         margin: 0;
         color: $dark-grey;
-
+ 
     }
 
     & h2 {
@@ -137,6 +140,7 @@ header {
         font-weight: 900;
         margin: 0;
         font-size: 1.5rem;
+        padding: 20px 0 0 0;
 
     }
 
@@ -216,7 +220,9 @@ header {
 }
 
 
-
+#content {
+    padding: 0 0 20px 0;
+}
 
 
 
@@ -478,7 +484,44 @@ footer {
 
 
 
+@media only screen and (max-width: 1050px) {
+
+    & #services {
+        & .service-btn {
+            position: absolute;
+            left: 35%;
+            bottom: -20px;
+        }
+    }
+
+
+
+
+}
+@media only screen and (max-width: 960px) {
+
+    & #services {
+        & .service-btn {
+            position: absolute;
+            left: 11%;
+            bottom: -20px;
+        }
+    }
+
+
+
+
+}
+
+
+
 @media only screen and (max-width: 600px) {
+
+        & header {
+            & .call-us {
+                display: none !important;
+            }
+        }
 
         & #slideshow {
 
@@ -490,6 +533,16 @@ footer {
                 font-size: 1.9rem !important;
             }
         }
+
+    & #services {
+        & .service-btn {
+            position: absolute;
+            left: 24%;
+            bottom: -20px;
+        }
+    }
+
+
 
         & #steps {
             & .step {

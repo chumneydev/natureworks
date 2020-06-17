@@ -7,7 +7,7 @@
 
 
 
-<form class="uk-grid-medium" uk-grid>
+<form class="uk-grid-medium" uk-grid method="post" >
     <div class="uk-width-1-1">
         <input name="fullname" class="uk-input" type="text" placeholder="Full Name">
     </div>
@@ -25,24 +25,25 @@
     </div>
 
     <div class="uk-width-1-1">
-        <button type="submit" class="uk-button uk-button-primary">Submit</button>
+        <!--<button type="submit" class="uk-button uk-button-primary">Submit</button>-->
+               <input type="submit" class="uk-button uk-button-primary" name="submit">     
     </div>
 
-</form> 
+</form>
 
 
-<?php
+<?php 
 
-	if(isset($_POST['submit'])) {
+	if($input->post->submit) {
 
         // init wireMail
         $mail = wireMail(); 
 
-	    $client = $email;			   
+	    $to = "lstephens@chumneyads.com";			   
 	    $fullName = $sanitizer->text($input->post->fullname);
 	    $email = $sanitizer->email($input->post->email);
 	    $phone = $sanitizer->email($input->post->phone);
-	    $comments = $sanitizer->email($input->post->comments);
+	    $comments = $sanitizer->text($input->post->comments);
 
 
         $subject = $page->title;
@@ -60,6 +61,16 @@
 	    );
 
 
+	$numSent = wireMail($to, '', $subject, $body, $options); 
+
+	if($numSent) {
+  		$output="Message Sent";
+	} else{
+  		$output="Message Not Sent";
+	
+	}
+
+	echo $output;
 
 
 
